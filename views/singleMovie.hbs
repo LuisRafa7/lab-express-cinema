@@ -1,0 +1,16 @@
+<div class="smovie">
+  <img src={{movie.image}} alt="" />
+  <div class="smoviecolumn">
+    <a href="/movies">Go back</a>
+    <h2>{{movie.title}}</h2>
+    <h3>{{movie.director}}</h3>
+    <h4>Stars</h4>
+    <ul>
+      {{#each movie.stars as |item|}}
+        <li>{{item}}</li>
+      {{/each}}
+    </ul>
+    <p>{{movie.description}}</p>
+    <p>{{movie.showtimes}}</p>
+  </div>
+</div>
